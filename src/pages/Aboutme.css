@@ -1,0 +1,111 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aboutme-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--bg);
+}
+.aboutme-top-nav{
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background: var(--bg);
+}
+.aboutme-main-section{    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: auto;
+}
+.aboutme-firstrow{
+    display: flex;
+    flex-direction: row;
+    margin: 0 300px;
+}
+.aboutme-content{
+    width: 50%;
+    color: var(--first-text);
+}
+.aboutme-content p{
+    line-height: 35px;
+}
+.aboutme-profile{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.aboutme-profile img{
+    width: 300px;
+    height: 300px;
+}
+
+.aboutme-secondrow{
+    margin: 30px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.whatdrivesme li{
+    line-height: 35px;
+}
+
+thead th{
+    border-bottom: 0.5px solid var(--first-text);
+    color: var(--first-text);
+    padding: 10px 5px;
+}
+tbody td{
+    border-bottom: 0.5px solid var(--first-text);
+    color: var(--first-text);
+    padding: 10px 5px;
+}
+.table th, td{
+    line-height: 35px;
+}
+.why li{
+    line-height: 35px;
+}
+
+
+/*==================== Media Size ======================*/
+@media (max-width:1250px){
+    .aboutme-firstrow{
+        display: flex;
+        flex-direction: column;
+        margin: 0 200px;
+    }
+    .aboutme-content{
+        width: 100%;
+    }
+    .aboutme-profile{
+        width: 100%;
+    }   
+    .aboutme-secondrow{
+        margin: 30px 200px;
+    }        
+}
+@media (max-width:950px){
+    .aboutme-firstrow{
+        margin: 0 100px;
+    }    
+    .aboutme-secondrow{
+        margin: 30px 100px;
+    }        
+}
+/*Mobile*/
+@media (max-width: 710px){
+    .aboutme-firstrow{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+    } 
+    .aboutme-secondrow{
+        margin: 30px 20px;
+    }
+}

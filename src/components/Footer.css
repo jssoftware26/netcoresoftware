@@ -1,0 +1,121 @@
+.footer-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--footer-bg);
+}
+.footer-firstrow{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+    background: var(--footer-bg);
+}
+.footer-secondrow{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background: var(--footer-bottom-bg);
+}
+.footer-secondrow p{
+    text-align: center;
+    color: var(--footer-text);
+    opacity: 0.7;
+    font-size: 14px;
+}
+.footer-secondrow a{
+    text-decoration: none;
+    color: var(--footer-text);
+}
+
+.brand-section{
+    width: 300px;
+}
+.brand-section h3{
+    color: #ff7700;
+    margin-bottom: 20px;
+}
+.brand-section p{
+    color: var(--footer-text);
+    line-height: 25px;
+}
+.services-section{
+    width: 300px;
+}
+.services-section h3{
+    color: #ff7700;
+    margin-bottom: 20px;
+}
+.services-section p{
+    color: var(--footer-text);
+    line-height: 30px;
+}
+.company-section{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.company-section h3{
+    color: #ff7700;
+    margin-bottom: 20px;
+}
+.company-section a{
+    text-decoration: none;
+    color: var(--footer-text);
+    line-height: 30px;
+
+}
+.contact{
+    width: 300px;
+}
+.contact h3{
+    color: #ff7700;
+    margin-bottom: 20px;
+}
+.contact-items{
+    display: flex;
+    flex-direction: column;
+}
+.contact-items a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: var(--footer-text);
+}
+.contact p{
+    color: var(--footer-text);
+    line-height: 35px;
+}
+
+/*==================== Media Size ======================*/
+/*Mobile*/
+@media (max-width: 710px){
+    .footer-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: var(--footer-bg);
+    }
+    .footer-firstrow{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        justify-content: center;
+        background: var(--footer-bg);
+    }
+    .footer-secondrow{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        background: var(--footer-bottom-bg);
+    }
+}

@@ -1,0 +1,70 @@
+/*For Light Theme*/
+:root{
+    --bg: #ffffff;
+    --first-text: #343a40;
+    --second-text: #343a40;
+    /*Navbar*/
+    --dropdown-border: #ff7700;
+    /*Chatbox*/
+    --chatbox-bg: #f7f7f7;
+    --chatbox-write: #dee2e6;
+    /*First Row Contents background color and opacity*/
+    --maincontent-bg: rgba(62, 178, 255, 0.2);
+    --h1-text: #023e8a;
+    /*Service Pages Content*/
+    --hoverv1: linear-gradient(135deg, #ff7700, #ffffff);;
+    --service-detail-bg: #3b4f5a;
+    /*Footer*/
+    --footer-bg: linear-gradient(90deg, #003049, #355591);
+    --footer-bottom-bg: linear-gradient(90deg, #013450, #2c55a1);
+    --submit-form-bg: #f0f5fc;
+    --footer-button: #dee2e6;
+    --footer-text: #ffffff;
+    --footer-text-hover: #dadada;
+    /*Contact Page*/
+    --formdatasinput-bg: #dee2e6;
+    
+    /*Create Account Themes*/
+    --create-bg: #ffffff;
+    --createlogo-bg: #ececec;
+    --create-texts: #343a40;
+    --createinput-bg: #ececec;
+    --create-hover: #e0e0e0;
+    --verify-bg: #ececec;
+
+}
+
+/*For Dark Theme*/
+[data-theme="dark"]{
+    --bg: #0d1b2a;
+    --first-text: #adb5bd;
+    --second-text: #6c757d;
+    /*Navbar*/
+    --dropdown-border: #;
+    /*Chatbox*/
+    --chatbox-bg: #003049;
+    --chatbox-write: #013c5c;
+    /*First Row Contents background color and opacity*/
+    --maincontent-bg: rgba(0, 0, 0, 0.3);
+    --h1-text: #dfdfdf;
+    /*Service Pages Content*/
+    --hoverv1: linear-gradient(90deg, #003049, #355591);    
+    --service-detail-bg: #003049;
+    /*Footer*/
+    --footer-bg: linear-gradient(135deg, #0f1e2e, #19324d);
+    --footer-bottom-bg: linear-gradient(135deg, #13263b, #183555);
+    --submit-form-bg: #122336;
+    --footer-button: #6c757d;
+    --footer-text: #adb5bd;
+    --footer-text-hover: #ffffff;
+    /*Contact Page*/
+    --formdatasinput-bg: #1c2b47;
+
+    /*Create Account Themes*/    
+    --create-bg: #002b42;
+    --createlogo-bg: #00283d;
+    --create-texts: #c0c0c0;
+    --createinput-bg: #173e58;
+    --create-hover: #0e3b5a;
+    --verify-bg: #0e3b5a;
+}

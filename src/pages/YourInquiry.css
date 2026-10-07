@@ -1,0 +1,109 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.yourinquiry-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--bg);
+}
+.yourinquiry-top-nav{
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background: var(--bg);
+}
+.yourinquiry-main-section{    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: auto;
+    margin: 5px 300px;
+}
+.inquiry-records-titlebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #274988;
+    padding: 6px;
+    margin-top: 25px;
+}
+.inquiry-records-titlebar h3{
+    color: #ffffff;
+}
+.inquiry-records-titlebar button{
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #274988;
+}
+.inquiry-records{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+.nothinginquiry{
+    text-align: center;
+    border: 0.5px solid var(--create-hover);
+    padding: 210px 0;
+    margin: 10px 0 30px 0;
+    border-radius: 10px;
+}
+.inquiry-record-card{
+    background-color: var(--chatbox-bg);
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.inquiry-record-card table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.inquiry-record-card td {
+    padding: 0;
+    border-bottom: 0.5px solid #ddd;
+}
+.inquiry-record-card td:first-child {
+    width: 300px;
+    font-weight: bold;
+}
+
+/*==================== Media Size ======================*/
+@media (max-width:1110px){
+    .yourinquiry-main-section{
+        margin: 5px 200px;
+    }
+}
+@media (max-width:900px){
+    .yourinquiry-main-section{
+        margin: 5px 100px;
+    }           
+}
+/*Mobile*/
+@media (max-width: 710px){
+    .yourinquiry-main-section{
+        margin: 5px 20px;
+    }
+    .inquiry-records{
+        gap: 20px;
+    }
+    .inquiry-record-card{
+        padding: 15px;
+    }
+    .inquiry-record-card td {
+        padding: 8px 3px;
+        font-size: 14px;
+    }
+    .inquiry-record-card td:first-child {
+        width: 120px;
+    }
+}

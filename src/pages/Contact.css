@@ -1,0 +1,200 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--bg);
+}
+.contact-top-nav{
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background: var(--bg);
+}
+.contact-main-section{    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: auto;
+}
+.letcontactme{
+    margin: 0 300px;
+    padding: 5px 0;
+}
+.letcontactme h2, h3, p{
+    color: var(--first-text);
+}
+.contact-submit-form{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 300px;
+}
+.direct-contact{
+    width: 50%;
+}
+.direct-contact a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    color: var(--first-text);
+}
+.inquiry-form{
+    width: 50%;
+    height: 900px;
+    border: 1px solid var(--second-text);
+    padding: 50px;
+    margin-bottom: 20px;
+}
+@media (max-width:1500px){
+    .contact-submit-form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 300px;
+    }
+    .direct-contact{
+        width: 100%;
+    }
+    .direct-contact a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin: 15px 0;
+        color: var(--first-text);
+    }
+    .inquiry-form{
+        width: 100%;
+        height: 940px;
+        border: 1px solid var(--second-text);
+        padding: 50px;
+    }
+}
+.formdatas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.formdatas input{
+    width: 100%;
+    height: 40px;
+    color: #ff7700;
+    font-size: 18px;
+    padding: 0 10px;
+    background: var(--formdatasinput-bg);
+    border: none;
+    outline: none;
+}
+.formdatas textarea{
+    width: 100%;
+    height: 130px;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    background: var(--formdatasinput-bg);
+    color: #ff7700;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    
+}
+.projectdetails input{
+    height: 180px;
+    width: 300px;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.servicerequires{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.servicerequires input{
+    width: 15px;
+    height: auto;
+}
+.servicerequires a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-right: 20px;
+}
+.send-btn{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background: var(--formdatasinput-bg);
+    color: #ff7700;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.map{
+    margin-top: 30px;
+}
+.map iframe{
+    border-radius: 20px;
+}
+
+/*==================== Media Size ======================*/
+@media (max-width:1200px){
+    .letcontactme{
+        margin: 0 100px;
+    }
+    .contact-submit-form{
+        margin: 0 100px;
+    }
+}
+/*Mobile*/
+@media (max-width: 710px){
+    .letcontactme{
+        margin: 0 20px;
+        padding: 5px 0;
+    }
+    .letcontactme h2, h3, p{
+        color: var(--first-text);
+    }
+    .contact-submit-form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 20px;
+    }
+    .direct-contact{
+        width: 100%;
+    }
+    .direct-contact a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin: 15px 0;
+        color: var(--first-text);
+    }
+    .inquiry-form{
+        width: 100%;
+        height: 940px;
+        border: 1px solid var(--second-text);
+        padding: 10px;
+    }
+    .map{
+        margin: 20px 0px;
+    }
+    .map iframe{
+        border-radius: 0;
+    }
+}

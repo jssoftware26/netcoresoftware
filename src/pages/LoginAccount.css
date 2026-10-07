@@ -1,0 +1,181 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-account-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg);
+}
+.login-account-card{
+    width: 70%;
+    height: 70vh;
+    background: var(--create-bg);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.login-logo{
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--createlogo-bg);
+}
+.back-to-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 7px 10px;
+    border: 0.5px solid var(--create-texts);
+    border-radius: 20px;
+    color: var(--create-texts);
+}
+.back-to-home a{
+    text-decoration: none;
+    color: var(--first-text);
+}
+.back-to-home a:hover{
+    color: var(--first-text);
+}
+.back-to-home:hover{
+    background-color: var(--create-hover);
+}
+.login-logo p{
+    position: absolute;
+    top: 450px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--create-texts);
+}
+.netcore-img{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 350px;
+    z-index: 1;
+}
+.map-img{
+    width: 250px;
+    height: auto;
+    opacity: 0.3;
+}
+.login-form{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-form h1{
+    color: var(--create-texts);
+}
+.alreadyhave{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 0;
+}
+.alreadyhave a{
+    text-decoration: none;
+    color: #00aa9c;
+}
+.alreadyhave p{
+    color: var(--create-texts);
+}
+.input-form-datas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 0;
+}
+.logintoggle-password{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    cursor: pointer;
+    user-select: none;
+    color: gray;
+}
+.input-form-datas input{
+    color: #00aa9c;
+    font-size: 17px;
+    padding: 12px 10px;
+    width: 300px;
+    border-radius: 10px;
+    outline: 0.5px solid #00aa9c;
+    border: none;
+    background: var(--createinput-bg);
+}
+.input-form-datas button{
+    width: 100px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00aa9c;
+    background: var(--createinput-bg);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-form-datas button:hover{
+    background-color: var(--create-hover);
+}
+
+/*=============  Response Contents Design ==============*/
+@media (max-width: 1095px){
+    .login-logo p{
+        font-size: 15px;
+    }
+    .netcore-img{
+        width: 250px;
+    }    
+}
+@media (max-width: 940px){
+    .login-account-card{
+        width: 92%;
+    }
+}
+
+/*==================== Media Size ======================/
+/*Mobile*/
+@media (max-width: 710px){
+    .login-account-card{
+        width: 98%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg);
+        gap: 10px;
+    }
+    .login-logo{
+        width: 100%;
+        height: 10vh;
+        background: none;
+    }
+    .login-logo p{
+        display: none;
+    }
+    .netcore-img{
+        display: none;
+    }
+    .map-img{
+        display: none;
+    }    
+    .login-form{
+        width: 100%;
+    }
+}

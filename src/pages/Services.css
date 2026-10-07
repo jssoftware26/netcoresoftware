@@ -1,0 +1,340 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.services-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--bg);
+}
+.services-top-nav{
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background: var(--bg);
+}
+.service-main-section{    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: auto;
+}
+.service-first-row{
+    display: flex;
+    flex-direction: row;
+    margin: 0 300px;
+    padding: 5px 0;
+}
+.service-second-row-title{
+    color: var(--first-text);
+}
+.sfr-contents{
+    width: 60%;
+    padding: 5px;
+    gap: 5px;
+}
+.sfr-contents button{
+    border: 0.5px solid #ff7700;
+    border-radius: 30px;
+    color: #ff7700;
+    padding: 8px 12px;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sfr-contents button:hover{
+    background: var(--hoverv1);
+}
+.sfr-image{
+    width: 40%;
+    padding: 5px;
+}
+.sfr-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.sfr-contents h2, p{
+    color: var(--first-text);
+}
+.sfr-contents p{
+    margin-top: 20px;
+}
+
+/*Price Ads Row*/
+.services-price-ads{
+    margin: 20px 300px;
+}
+
+.service-second-row{
+    display: flex;
+    flex-direction: column;
+    margin: 0 300px;
+    padding: 5px 0;
+}
+.app-types{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.view-web, .view-mobile, .view-desktop,
+.view-small-customize-project{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 5px;
+    border-radius: 10px;
+    border: 1px solid var(--first-text);
+    position: relative;
+    cursor: pointer;
+}
+.view-web img, .view-mobile img, .view-desktop img,
+.view-small-customize-project img{
+    width: 45px;
+}
+.view-web:hover, .view-mobile:hover,
+.view-desktop:hover, .view-small-customize-project:hover{
+    background: var(--hoverv1);
+}
+@media (max-width:1480px){
+    .service-first-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .app-types{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .view-web, .view-mobile, .view-desktop,
+    .view-small-customize-project{
+        width: 380px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 5px;
+        border-radius: 10px;
+        border: 1px solid var(--first-text);
+        position: relative;
+    }
+}
+@media (max-width:980px){
+    .service-second-row{
+        display: flex;
+        flex-direction: column;
+        margin: 0 100px;
+        padding: 5px 0;
+    }
+    /*Price Ads Row*/
+    .services-price-ads{
+        margin: 20px 200px;
+    } 
+}
+
+/*Features & Use Case*/
+.feature-usecase{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+.feature-usecase p{
+    margin-bottom: 7px;
+}
+.web-service-details, .mobile-service-details,
+.desktop-service-details, .custome-service-details{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: var(--service-detail-bg);
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+.feature, .usecase{
+    width: 50%;
+    text-align: center;
+    border: 0.5px solid #ffffff;
+    border-radius: 10px;
+}
+@media (max-width: 1290px){
+    .web-service-details, .mobile-service-details,
+    .desktop-service-details, .custome-service-details{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        background: var(--service-detail-bg);
+        justify-content: center;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 80px;
+    }
+    .feature, .usecase{
+        width: 100%;
+        text-align: center;
+        border: 0.5px solid #ffffff;
+        border-radius: 10px;
+    }
+    /*Price Ads Row*/
+    .services-price-ads{
+        margin: 20px 200px;
+    }
+}
+.feature h4, .feature p, .usecase h4, .usecase p{
+    color: #ffffff;
+    padding: 10px;
+}
+
+/*Techanical Explain*/
+.tech-explain h2, h3, p, li{
+    color: var(--first-text);
+}
+.tech-explain li{
+    margin-left: 40px;
+}
+
+.checkicon{
+    position: absolute;
+    top: 2%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    color: #ff7700;
+}
+
+.service-footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    top: 20px;
+}
+
+/*==================== Media Size ======================*/
+/*Mobile*/
+@media (max-width: 710px){
+    .service-main-section{    
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        overflow: auto;
+    }
+    .service-first-row{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .service-second-row-title{
+        color: var(--first-text);
+    }
+    .sfr-contents{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .sfr-image{
+        width: 90%;
+        padding: 5px;        
+    }
+    .sfr-image img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .sfr-contents h2, p{
+        color: var(--first-text);
+    }
+    /*Price Ads Row*/
+    .services-price-ads{
+        margin: 20px 20px;
+    }
+    .service-second-row{
+        display: flex;
+        flex-direction: column;
+        margin: 0 23px;
+        padding: 5px 0;
+    }
+    .app-types{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .view-web, .view-mobile, .view-desktop,
+    .view-small-customize-project{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 5px;
+        border-radius: 10px;
+        border: 1px solid var(--first-text);
+        position: relative;
+        cursor: pointer;
+    }
+    .view-web img, .view-mobile img, .view-desktop img,
+    .view-small-customize-project img{
+        width: 45px;
+    }
+    .view-web:hover, .view-mobile:hover,
+    .view-desktop:hover, .view-small-customize-project:hover{
+        background: var(--hoverv1);
+    }
+
+    /*Features & Use Case*/
+    .feature-usecase{
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-usecase p{
+        margin-bottom: 7px;
+    }
+    .web-service-details, .mobile-service-details,
+    .desktop-service-details, .custome-service-details{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        background: var(--service-detail-bg);
+        justify-content: center;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    .feature, .usecase{
+        width: 100%;
+        text-align: center;
+        border: 0.5px solid #ffffff;
+        border-radius: 10px;
+    }
+    .feature h4, .feature p, .usecase h4, .usecase p{
+        color: #ffffff;
+        padding: 10px;
+    }
+}
